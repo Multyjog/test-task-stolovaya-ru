@@ -4,7 +4,7 @@ const callBackElement = document.querySelector(".header-tel-callback")
 // show the copy menu
 document.querySelector(".header__mail").addEventListener("click", e => {
     e.stopPropagation(); 
-    element.classList.toggle("header__mail__copy__hide");  
+    mailElement.classList.toggle("header__mail__copy__hide");  
 });
 
 // remove the copy menu, by click anywhere
@@ -15,6 +15,8 @@ document.querySelector(".tel-phone").addEventListener("mouseover", () => callBac
 
 // remove the callback menu, by click anywhere
 document.addEventListener("click", () => callBackElement.classList.add("hide"));
+
+// document.addEventListener("scroll", () => callBackElement.classList.add("hide"))
 
 
 

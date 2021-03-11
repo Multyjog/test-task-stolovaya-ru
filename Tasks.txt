@@ -1,6 +1,7 @@
 Макет на верстку https://yadi.sk/d/2eQmu63BPNyxvg
 
-- [] mail copy menu on click
+- [] prevent blocking the hover callback menu by scroll the page
+- [x] mail copy menu on click
 - [] callback menu on hover
 - [x] Макет, все его детали, отступы, шрифты и стили шрифтов должны быть 1 к 1 соблюдены в верстке. Если с этим возникают проблемы - 
 используем Pixel perfect
