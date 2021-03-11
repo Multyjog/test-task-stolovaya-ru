@@ -10285,7 +10285,16 @@ header.active .header-categories {
     display: inline-block;
     padding-right: 3px;
 }
-
+.header__mail__copy{
+    position: fixed;
+    border-radius: 50px;
+    background-color: rgb(40, 40, 40);
+    color: white;
+    padding: 0px 35px;
+}
+.header__mail__copy__hide {
+        visibility: hidden;
+}
 @media screen and (max-width: 1024px) {
     .header__mail {
         display: none;
@@ -19801,10 +19810,6 @@ body .catalog-banner-middle_right-bottom .catalog-banner-item .catalog-banner-it
     text-align: center;
 }
 
-/*Удаляем выбор метода связи*/
-.tel-method {
-    display: none;
-}
 
 .mobile-header-menu__content__head {
     /*font-size: 25px;*/

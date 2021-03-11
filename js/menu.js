@@ -45,7 +45,6 @@ $(function () {
         $('.categories-menu__context__item[data-id=2] .category__menu.sections__'+data).fadeIn(300);
         $('.categories-menu__context__item[data-id=2]').fadeIn(300);
 
-        console.log(data);
         if(data != undefined){
             return false;
         }
@@ -89,8 +88,6 @@ $(function () {
                 data: data,
                 dataType:'json',
                 success:function (e) {
-                    console.log(e);
-                    console.log(true);
                     $('.mobile-header-menu__content.step3 .mobile-header-menu__content__context').remove();
                     $('.mobile-header-menu__content.step3 .to-append').append(e.STEP1);
                     $('.step2').hide("slide", { direction: "left" }, 300);
@@ -110,8 +107,6 @@ $(function () {
                     });
                 },
                 error:function (e) {
-                    console.log(e);
-                    console.log(false);
                 }
             });
         }

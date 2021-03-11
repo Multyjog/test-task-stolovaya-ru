@@ -13,7 +13,6 @@ $(function() {
         }
     } else {
         $('meta[name=viewport]').attr('content', 'width=device-width, initial-scale=0.5, user-scalable=no');
-        console.log(1000);
     };
      /*плавный скролл*/
     $('a[href^="#"]').click(function(){
@@ -111,14 +110,11 @@ $(function() {
     // if (event.keyCode == 13) {
     var that = $(this);
 
-      console.log(searchFlag)
-console.log($(this))
     var data = 'ID=' +
         that.closest('.search-find').find('.categories-text').data('id') +
         '&SEARCH=' + that.val();
 
     if (searchFlag == 0) {
-        console.log(searchFlag)
       searchFlag = 1;
       $.ajax({
         type: 'post',
@@ -126,16 +122,12 @@ console.log($(this))
         data: data,
         dataType: 'html',
         success: function(e) {
-          console.log(e);
-          console.log(true);
           $('.search-result ul').remove();
           $('.search-result').append(e);
           searchFlag = 0;
 
         },
         error: function(e) {
-          console.log(e);
-          console.log(false);
         },
       });
     }
@@ -153,16 +145,12 @@ console.log($(this))
         data: data,
         dataType: 'html',
         success: function(e) {
-          console.log(e);
-          console.log(true);
           $('.looking-tabs,.looking-tabs-content').remove();
           $('.search-result').append(e);
 
           searchFlag = 0;
         },
         error: function(e) {
-          console.log(e);
-          console.log(false);
         },
       });
     }
@@ -619,7 +607,6 @@ console.log($(this))
   });
 
   if ($('body .baget-last').length > 1) {
-    console.log($('body .baget-last').length);
     $('.baget ul li .name').each(function() {
       $('.options__type .name').text($(this).text());
       $('.options__type a').attr('href', $(this).closest('li').data('src'));
@@ -627,13 +614,11 @@ console.log($(this))
     });
   }
   else if ($('.baget-last').length == 1) {
-    console.log($('.baget-last').length);
     $('.options__type .name').text($('.baget .name').eq(0).text());
     $('.options__type a').
         attr('href', $('.baget .name').eq(0).closest('li').data('src'));
   }
   else {
-    console.log($('.baget-last').length);
     $('.options__type .name').text('Каталог');
     $('.options__type a').attr('href', '/catalog/');
   }
@@ -644,15 +629,12 @@ console.log($(this))
     var data = $(this).serialize();
     $('input#minCost').val($('input#minCost').val() + ' руб.');
     $('input#maxCost').val($('input#maxCost').val() + ' руб.');
-    console.log(data);
     $.ajax({
       type: 'post',
       url: '/ajax/filter.php',
       data: data,
       dataType: 'html',
       success: function(e) {
-        console.log(e);
-        console.log(true);
 
         $('.catalog-list').remove();
         $('.filter-context').remove();
@@ -677,15 +659,12 @@ console.log($(this))
         //         timeout: 3000,
         //         success: function (data) {
         //             $("#btn_" + bx_ajax_id).remove();
-        //             console.log(data);
         //             $('.catalog-list').append(data);
         //         }
         //     });
         // });
       },
       error: function(e) {
-        console.log(e);
-        console.log(false);
       },
     });
 
@@ -699,13 +678,10 @@ console.log($(this))
       data: '',
       dataType: 'html',
       success: function(e) {
-          console.log(e);
           $('.basket-count').empty();
         $('.basket-count').append(e);
       },
       error: function(e) {
-        console.log(e);
-        console.log(false);
       },
     });
   };
@@ -717,15 +693,12 @@ console.log($(this))
       data: '',
       dataType: 'html',
       success: function(e) {
-          console.log(e);
         $('.basket-order__price span').empty();
         $('.basket-order__price span').append(e);
         $('.basket-num span').empty();
         $('.basket-num span').append(e);
       },
       error: function(e) {
-        console.log(e);
-        console.log(false);
       },
     });
   };
@@ -734,22 +707,17 @@ console.log($(this))
 
     var data = $(this).serialize();
 
-    console.log(data);
     $.ajax({
       type: 'post',
       url: '/ajax/addBasket.php',
       data: data,
       dataType: 'html',
       success: function(e) {
-        console.log(e);
-        console.log(true);
         updateBasket();
         updatePrice();
         showMessage('Товар успешно добавлен в корзину!');
       },
       error: function(e) {
-        console.log(e);
-        console.log(false);
       },
     });
 
@@ -774,8 +742,6 @@ console.log($(this))
       data: data,
       dataType: 'html',
       success: function(e) {
-        console.log(e);
-        console.log(true);
 
         var price = parseIntNew(that.closest('.basket-item').
             find('.basket-item-price__cur span').
@@ -790,8 +756,6 @@ console.log($(this))
         updatePrice();
       },
       error: function(e) {
-        console.log(e);
-        console.log(false);
       },
     });
   });
@@ -809,8 +773,6 @@ console.log($(this))
         updateBasket();
       },
       error: function(e) {
-        console.log(e);
-        console.log(false);
       },
     });
   });
@@ -832,8 +794,6 @@ console.log($(this))
         len = file.length;
 
     for (; i < len; i++) {
-      console.log('file[i]:');
-      console.log(file[i]);
     }
     $('.loadFile').submit();
   });
@@ -842,7 +802,6 @@ console.log($(this))
     e.preventDefault();
     var that = $(this);
     var data = new FormData(that.get(0));
-    console.log(data);
     $.ajax({
       url: '/ajax/loadFile.php',
       data: data,
@@ -851,21 +810,15 @@ console.log($(this))
       type: 'post',
       dataType: 'json',
       success: function(value) {
-        console.log('true');
-        console.log(value);
         if (value != 'Ошибка загрузки файла') {
           $('.order .upload-file-field').val(value[0].name);
           $('.order .upload-file').val(value[1]);
-          console.log($('.order .upload-file-field').val());
-          console.log($('.order .upload-file').val());
         }
         else {
           showMessage(value);
         }
       },
       error: function(value) {
-        console.log('false');
-        console.log(value);
       },
     });
     return false;
@@ -878,8 +831,6 @@ console.log($(this))
       data: data,
       dataType: 'html',
       success: function(e) {
-        console.log(e);
-        console.log(true);
         showMessage(e);
         $('#message').addClass('active');
         $('#message.active').click(function () {
@@ -890,8 +841,6 @@ console.log($(this))
         },6000);
       },
       error: function(e) {
-        console.log(e);
-        console.log(false);
       },
     });
     return false;
@@ -926,12 +875,10 @@ $(function () {
             url: '/ajax/form_service.php',
             dataType: 'json',
             success:function (e) {
-                console.log('true ' + e);
                 that.fadeOut();
                 $('.note').text(e);
             },
             error:function (e) {
-                console.log(e);
             }
         });
         return false;
@@ -945,12 +892,10 @@ $(function () {
             url: '/ajax/form_ask.php',
             dataType: 'json',
             success:function (e) {
-                console.log('true ' + e);
                 that.fadeOut();
                 $('.note_ask').text(e);
             },
             error:function (e) {
-                console.log( e);
             }
         });
         return false;
@@ -967,12 +912,10 @@ $(function () {
             url: '/ajax/form_reviews.php',
             dataType: 'json',
             success:function (e) {
-                console.log('true ' + e);
                 that.fadeOut();
                 $('.note_review').text(e);
             },
             error:function (e) {
-                console.log( e);
             }
         });
         return false;
