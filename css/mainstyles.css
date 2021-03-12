@@ -26906,3 +26906,63 @@ input.bt2:active {
     line-height: 1.44em
 }
 
+@media screen and (min-width: 767px) {
+.mobile-search{
+    display: none;
+}
+}
+.mobile-search {
+    height: 100px;
+}
+.mobile-search__img img {
+width: 60px;
+}
+.mobile-search__txt {
+    line-height: 25px;
+}
+.mobile-search__txt_b {
+    font-size: 24px;
+}
+.mobile-search__txt_s {
+    color: grey;
+    font-size: 16px;
+}
+.mobile-search-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+}
+.mobile-search__rightgroup {
+width: 210px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1rem;
+}
+.mobile-search__leftgroup {
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mobile-search__button {
+    border-radius: 50%;
+    margin-left: 2rem;
+    background-color: orange;
+}
+.mobile-search__button img {
+    padding: 25px
+}
+@media screen and (max-width: 767px) {
+    .portfolio-seo__context_hide {
+        display: none;
+    }
+}
+.drop-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5rem;
+}
+.drop-menu__hide {
+    display: none;
+}

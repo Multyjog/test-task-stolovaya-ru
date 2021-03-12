@@ -1,5 +1,7 @@
 const mailElement = document.querySelector(".header__mail__copy")
 const callBackElement = document.querySelector(".header-tel-callback")
+const categoryElement = document.querySelector(".drop-menu")
+
 
 // show the copy menu
 document.querySelector(".header__mail").addEventListener("click", e => {
@@ -15,6 +17,9 @@ document.querySelector(".tel-phone").addEventListener("mouseover", () => callBac
 
 // remove the callback menu, by click anywhere
 document.addEventListener("click", () => callBackElement.classList.add("hide"));
+
+// add or remove the category menu at the mobile version of app by pressing a button
+document.querySelector(".mobile-search__button").addEventListener("touchstart", () => categoryElement.classList.toggle("drop-menu__hide"))
 
 // document.addEventListener("scroll", () => callBackElement.classList.add("hide"))
 
