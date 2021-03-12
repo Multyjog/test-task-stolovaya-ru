@@ -8586,20 +8586,6 @@ a.text-dark:focus,a.text-dark:hover {
     visibility: hidden!important
 }
 
-/*# sourceMappingURL=bootstrap.min.css.map */
-/* End */
-/* Start:/bitrix/templates/STOLOVAYA_2017/bower_components/swiper/dist/css/swiper.min.css?157846603619334*/
-/**
- * Swiper 4.0.6
- * Most modern mobile touch slider and framework with hardware accelerated transitions
- * http://www.idangero.us/swiper/
- *
- * Copyright 2014-2017 Vladimir Kharlampidi
- *
- * Released under the MIT License
- *
- * Released on: November 13, 2017
- */
 .swiper-container {
     margin: 0 auto;
     position: relative;
@@ -9236,9 +9222,6 @@ button.swiper-pagination-bullet {
     -ms-perspective: 1200px
 }
 
-/* End */
-/* Start:/bitrix/templates/STOLOVAYA_2017/bower_components/magnific-popup/dist/magnific-popup.css?15784660366951*/
-/* Magnific Popup CSS */
 .mfp-bg {
     top: 0;
     left: 0;
@@ -11014,11 +10997,11 @@ header.active .header-categories {
 }
 
 .categories .container .swiper-button-next {
-    background-image: url("img/right.png");
+    background-image: url("../img/right2.png");
 }
 
 .categories .container .swiper-button-prev {
-    background-image: url("img/left.png");
+    background-image: url("../img/left2.png");
 }
 
 .categories-item {
@@ -12553,7 +12536,6 @@ header.active .header-categories {
 @media screen and (max-width: 1024px) and (min-width: 767px) {
     .card-block__left__slider .swiper-button-next {
         top: -10px;
-        background-image: url("/bitrix/templates/STOLOVAYA_2017/css/../images/right.png");
         right: -5%;
     }
 
@@ -12564,14 +12546,12 @@ header.active .header-categories {
 
 .card-block__left__slider .swiper-button-prev {
     top: 0;
-    background-image: url("/bitrix/templates/STOLOVAYA_2017/css/../images/swip-but2.png");
     left: inherit;
 }
 
 @media screen and (max-width: 1024px) and (min-width: 767px) {
     .card-block__left__slider .swiper-button-prev {
         top: 68%;
-        background-image: url("/bitrix/templates/STOLOVAYA_2017/css/../images/left.png");
         left: -7%;
     }
 }
@@ -15084,7 +15064,6 @@ header.active .header-categories {
 }
 
 .options__select .select-down::after {
-    background-image: url("/bitrix/templates/STOLOVAYA_2017/css/../images/select-down.png");
     top: 9px;
 }
 
@@ -15593,7 +15572,6 @@ header.active .header-categories {
 
 .select-down::after {
     content: '';
-    background: url(/bitrix/templates/STOLOVAYA_2017/css/../images/down.png) no-repeat;
     width: 10px;
     -webkit-background-size: 100% 100%;
     background-size: 100%;
@@ -15603,7 +15581,11 @@ header.active .header-categories {
     position: absolute;
     top: 15px;
 }
-
+@media screen and (min-width: 768px) {
+.search__mobile { 
+    display:none
+}
+}
 @media screen and (max-width: 767px) {
     .select-down::after {
         width: 20px;
@@ -15611,17 +15593,14 @@ header.active .header-categories {
         top: 35px;
         -webkit-background-size: contain !important;
         background-size: contain !important;
-        background: url(/bitrix/templates/STOLOVAYA_2017/css/../images/down2.png) no-repeat;
     }
 }
 
 .select-down.active::after {
-    background: url(/bitrix/templates/STOLOVAYA_2017/css/../images/up.png) no-repeat;
 }
 
 @media screen and (max-width: 767px) {
     .select-down.active::after {
-        background: url(/bitrix/templates/STOLOVAYA_2017/css/../images/up2.png) no-repeat;
     }
 }
 
@@ -16695,12 +16674,12 @@ header.active .header-categories {
 
 .swiper-container__mian .swiper-button-prev {
     left: 35px;
-    background-image: url(/bitrix/templates/STOLOVAYA_2017/css/../images/left2.png);
+    background-image: url(../img/left2.png);
 }
 
 .swiper-container__mian .swiper-button-next {
     right: 35px;
-    background-image: url(/bitrix/templates/STOLOVAYA_2017/css/../images/right2.png);
+    background-image: url(../img/right2.png);
 }
 
 .swiper-container__mian .swiper-pagination-bullet-active {
@@ -16758,12 +16737,10 @@ header.active .header-categories {
 
 .swiper-container__spacial .swiper-button-prev {
     left: 35px;
-    background-image: url(/bitrix/templates/STOLOVAYA_2017/css/../images/left2.png);
 }
 
 .swiper-container__spacial .swiper-button-next {
     right: 35px;
-    background-image: url(/bitrix/templates/STOLOVAYA_2017/css/../images/right2.png);
 }
 
 @media screen and (max-width: 767px) {
@@ -19074,6 +19051,7 @@ body .supply-offers-list .list-top .supply-offers-item:last-child {
     }
 }
 
+
 .footer-left {
     display: -webkit-box;
     display: -webkit-flex;
@@ -19848,7 +19826,6 @@ h1,h2,h3,h4,h5 {
 }
 
 /* End */
-/* Start:/bitrix/templates/STOLOVAYA_2017/css/prodaction.css?157846603736707*/
 .categories-menu__context__item {
     display: none;
 }
@@ -21723,12 +21700,10 @@ header .header__phone a {
     }
 
     .card-block-mobile .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
-        background-image: url("/bitrix/templates/STOLOVAYA_2017/css/../images/cardswipright.png");
         right: 25px;
     }
 
     .card-block-mobile .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
-        background-image: url("/bitrix/templates/STOLOVAYA_2017/css/../images/cardswipleft.png") ;
         left: 25px;
     }
 
@@ -21863,7 +21838,6 @@ header {
     color: #000 !important; }
 
 /* End */
-/* Start:/bitrix/templates/STOLOVAYA_2017/css/prodactionhelp.css?157846603766802*/
 .goszag {
     padding-top: 315px;
 }
@@ -24612,7 +24586,6 @@ section.baget.baget-portfolio {
 
 .logo-icon {
     float: left;
-    background: url(/bitrix/templates/STOLOVAYA_2017/images/vilka-nozh.png) no-repeat center center;
     width: 79px;
     height: 116px;
 }
@@ -24660,7 +24633,6 @@ section.baget.baget-portfolio {
     bottom: 0;
     left: 130px;
     right: 0;
-    background: url(/bitrix/templates/STOLOVAYA_2017/images/error-menu.png) no-repeat center center;
     width: 127px;
     height: 115px;
     opacity: 0;
@@ -24672,7 +24644,6 @@ section.baget.baget-portfolio {
     bottom: 0;
     left: 140px;
     right: 0;
-    background: url(/bitrix/templates/STOLOVAYA_2017/images/error-portfel.png) no-repeat center center;
     width: 120px;
     height: 116px;
     opacity: 0;
@@ -25046,7 +25017,6 @@ section.baget.baget-portfolio {
 }
 
 /* End */
-/* Start:/bitrix/templates/STOLOVAYA_2017/css/dont-touch.css?15784660372195*/
 .kindergarten.complex .producer-banner {
     overflow: hidden;
 }
@@ -25199,7 +25169,6 @@ div.link {
 }
 
 /* End */
-/* Start:/bitrix/templates/STOLOVAYA_2017/components/bitrix/catalog.section.list/search/style.css?15784660377305*/
 /* line */
 .bx_catalog_line {
     margin-bottom: 30px;
@@ -26322,7 +26291,6 @@ table.counter tbody tr td#quantity_control {
 }
 
 .basket_quantity_control a {
-    background: url("/bitrix/templates/STOLOVAYA_2017/components/bitrix/sale.basket.basket/header/images/arrows.png") no-repeat scroll 0 0 transparent;
     border: 1px solid #d8d8d8;
     display: block;
     height: 10px;
@@ -26488,10 +26456,6 @@ input.bt2:active {
     border: 0;
     border-style: solid;
     border-width: 1px;
-    -webkit-border-image: url(/bitrix/templates/STOLOVAYA_2017/components/bitrix/sale.basket.basket/header/images/x2border.png) 2 stretch;
-    -moz-border-image: url(/bitrix/templates/STOLOVAYA_2017/components/bitrix/sale.basket.basket/header/images/x2border.png) 2 stretch;
-    -o-border-image: url(/bitrix/templates/STOLOVAYA_2017/components/bitrix/sale.basket.basket/header/images/x2border.png) 2 stretch;
-    border-image: url(/bitrix/templates/STOLOVAYA_2017/components/bitrix/sale.basket.basket/header/images/x2border.png) 2 fill stretch
 }
 
 .bx_ordercart .bx_item_detail_size_small_noadaptive ul li:hover a {
@@ -26506,10 +26470,6 @@ input.bt2:active {
     border: 0;
     border-style: solid;
     border-width: 1px;
-    -webkit-border-image: url(/bitrix/templates/STOLOVAYA_2017/components/bitrix/sale.basket.basket/header/images/x2border_active.png) 2 stretch;
-    -moz-border-image: url(/bitrix/templates/STOLOVAYA_2017/components/bitrix/sale.basket.basket/header/images/x2border_active.png) 2 stretch;
-    -o-border-image: url(/bitrix/templates/STOLOVAYA_2017/components/bitrix/sale.basket.basket/header/images/x2border_active.png) 2 stretch;
-    border-image: url(/bitrix/templates/STOLOVAYA_2017/components/bitrix/sale.basket.basket/header/images/x2border_active.png) 2 fill stretch
 }
 
 .bx-no-touch .bx_ordercart .bx_item_detail_size_small_noadaptive .bx_slide_left,.bx-no-touch .bx_ordercart .bx_item_detail_size_small_noadaptive .bx_slide_right {
@@ -26531,25 +26491,21 @@ input.bt2:active {
 
 .bx-no-touch .bx_ordercart .bx_item_detail_size_small_noadaptive .bx_slide_left {
     left: -5%;
-    background: url(/bitrix/templates/STOLOVAYA_2017/components/bitrix/sale.basket.basket/header/images/arr_left.png) no-repeat left center;
     background-size: 100% auto
 }
 
 .bx-no-touch .bx_ordercart .bx_item_detail_size_small_noadaptive .bx_slide_right {
     right: -5%;
-    background: url(/bitrix/templates/STOLOVAYA_2017/components/bitrix/sale.basket.basket/header/images/arr_right.png) no-repeat right center;
     background-size: 100% auto
 }
 
 .bx-touch .bx_ordercart .bx_item_detail_size_small_noadaptive .bx_slide_left {
     left: 0;
-    background: url(/bitrix/templates/STOLOVAYA_2017/components/bitrix/sale.basket.basket/header/images/fade_left.png) repeat-y left center;
     background-size: 100% auto
 }
 
 .bx-touch .bx_ordercart .bx_item_detail_size_small_noadaptive .bx_slide_right {
     right: 0;
-    background: url(/bitrix/templates/STOLOVAYA_2017/components/bitrix/sale.basket.basket/header/images/fade_right.png) repeat-y right center;
     background-size: 100% auto
 }
 
@@ -26631,10 +26587,6 @@ input.bt2:active {
     border: 0;
     border-style: solid;
     border-width: 1px;
-    -webkit-border-image: url(/bitrix/templates/STOLOVAYA_2017/components/bitrix/sale.basket.basket/header/images/x2border.png) 2 stretch;
-    -moz-border-image: url(/bitrix/templates/STOLOVAYA_2017/components/bitrix/sale.basket.basket/header/images/x2border.png) 2 stretch;
-    -o-border-image: url(/bitrix/templates/STOLOVAYA_2017/components/bitrix/sale.basket.basket/header/images/x2border.png) 2 stretch;
-    border-image: url(/bitrix/templates/STOLOVAYA_2017/components/bitrix/sale.basket.basket/header/images/x2border.png) 2 fill stretch
 }
 
 .bx_ordercart .bx_item_detail_scu_small_noadaptive .bx_scu ul li:hover a {
@@ -26650,10 +26602,6 @@ input.bt2:active {
     border: 0;
     border-style: solid;
     border-width: 1px;
-    -webkit-border-image: url(/bitrix/templates/STOLOVAYA_2017/components/bitrix/sale.basket.basket/header/images/x2border_active.png) 2 stretch;
-    -moz-border-image: url(/bitrix/templates/STOLOVAYA_2017/components/bitrix/sale.basket.basket/header/images/x2border_active.png) 2 stretch;
-    -o-border-image: url(/bitrix/templates/STOLOVAYA_2017/components/bitrix/sale.basket.basket/header/images/x2border_active.png) 2 stretch;
-    border-image: url(/bitrix/templates/STOLOVAYA_2017/components/bitrix/sale.basket.basket/header/images/x2border_active.png) 2 fill stretch
 }
 
 .bx_ordercart .bx_item_detail_scu_small_noadaptive .bx_scu ul li a span {
@@ -26690,25 +26638,21 @@ input.bt2:active {
 
 .bx-no-touch .bx_ordercart .bx_item_detail_scu_small_noadaptive .bx_slide_left {
     left: -5%;
-    background: url(/bitrix/templates/STOLOVAYA_2017/components/bitrix/sale.basket.basket/header/images/arr_left.png) no-repeat left center;
     background-size: 100% auto
 }
 
 .bx-no-touch .bx_ordercart .bx_item_detail_scu_small_noadaptive .bx_slide_right {
     right: -5%;
-    background: url(/bitrix/templates/STOLOVAYA_2017/components/bitrix/sale.basket.basket/header/images/arr_right.png) no-repeat right center;
     background-size: 100% auto
 }
 
 .bx-touch .bx_ordercart .bx_item_detail_scu_small_noadaptive .bx_slide_left {
     left: 0;
-    background: url(/bitrix/templates/STOLOVAYA_2017/components/bitrix/sale.basket.basket/header/images/fade_left.png) repeat-y left center;
     background-size: 100% auto
 }
 
 .bx-touch .bx_ordercart .bx_item_detail_scu_small_noadaptive .bx_slide_right {
     right: 0;
-    background: url(/bitrix/templates/STOLOVAYA_2017/components/bitrix/sale.basket.basket/header/images/fade_right.png) repeat-y right center;
     background-size: 100% auto
 }
 
@@ -26721,7 +26665,6 @@ input.bt2:active {
 }
 
 /* End */
-/* Start:/bitrix/templates/STOLOVAYA_2017/components/bitrix/sale.basket.basket.line/price/style.min.css?15784660373569*/
 .bx-basket-block {
     font-size: 12px;
     padding-bottom: 5px;

@@ -84,7 +84,6 @@ $(function () {
             var data = "ID="+that.data('id');
             $.ajax({
                 type:'post',
-                url:'/bitrix/templates/STOLOVAYA_2017/include/mobile.php',
                 data: data,
                 dataType:'json',
                 success:function (e) {
