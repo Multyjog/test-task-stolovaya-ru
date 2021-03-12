@@ -10274,6 +10274,7 @@ header.active .header-categories {
     background-color: rgb(40, 40, 40);
     color: white;
     padding: 0px 35px;
+    cursor: pointer;
 }
 .header__mail__copy__hide {
         visibility: hidden;
@@ -26965,4 +26966,7 @@ width: 210px;
 }
 .drop-menu__hide {
     display: none;
+}
+.block {
+    display:block
 }

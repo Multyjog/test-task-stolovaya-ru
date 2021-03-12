@@ -6,6 +6,6 @@ const copyToClipboard = str => {
   el.select();
   document.execCommand('copy');
   document.body.removeChild(el);
-  console.log(el)
 };
-document.querySelector(".header__mail__copy").addEventListener("click", copyToClipboard(element))
+document.querySelector(".header__mail__copy").addEventListener("click", () => {
+  copyToClipboard(element)})
