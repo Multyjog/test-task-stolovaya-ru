@@ -6,13 +6,10 @@
     <title>Столовая.РУ</title>
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/mainstyles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800&subset=cyrillic">
     <script src="js/jquery.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
-<div id="panel"></div>
 
 <body>
     <header class="desktop2">
@@ -62,27 +59,27 @@
                                         <div class="tel-method">
                                             <span class="callback-choise">Выберите способ связи:</span>
                                             <label for="phone">
-                                                <div class="tel-method__img">
+                                                <span class="tel-method__img">
                                                     <img src="img/drop-menu1.png" alt="handset">
-                                                </div>
+                                                </span>
                                                 <span>Мобильный</span>
                                             </label>
                                             <label for="viber">
-                                                <div class="tel-method__img">
+                                                <span class="tel-method__img">
                                                     <img src="img/drop-menu2.png" alt="viber logo">
-                                                </div>
+                                                </span>
                                                 <span>Viber</span>
                                             </label>
                                             <label for="telegram">
-                                                <div class="tel-method__img">
+                                                <span class="tel-method__img">
                                                     <img src="img/drop-menu3.png" alt="telegram logo">
-                                                </div>
+                                                </span>
                                                 <span>Telegram</span>
                                             </label>
                                             <label for="whatsapp">
-                                                <div class="tel-method__img">
+                                                <span class="tel-method__img">
                                                     <img src="img/drop-menu4.png" alt="whatsapp logo">
-                                                </div>
+                                                </span>
                                                 <span>Whatsapp</span>
                                             </label>
                                         </div>
@@ -90,15 +87,14 @@
                                     <div class="header-tel-callback-right">
                                         <span class="callback-call">Обратный звонок</span>
                                         <span class="callback-time">Мы перезвоним вам в течении часа</span>
-                                        <form name="SIMPLE_FORM_1" action="/" method="POST"
-                                            enctype="multipart/form-data"><input type="hidden" name="sessid" id="sessid"
+                                        <form name="SIMPLE_FORM_1" method="POST" enctype="multipart/form-data"><input
+                                                type="hidden" name="sessid" id="sessid"
                                                 value="b58d92d54e003907db50c8664e1fdae7" /><input type="hidden"
                                                 name="WEB_FORM_ID" value="1" />
                                             <p></p>
-                                            <span class="callback-form">Имя</span>
-                                            <input type="text" class="inputtext" name="form_text_1" value="" size="0" />
-                                            <span class="callback-form">Телефон</span>
-                                            <input type="text" class="inputtext" name="form_text_3" value="" size="0" />
+                                            <input type="text" class="inputtext" name="form_text_1" placeholder="Имя" />
+                                            <input type="text" class="inputtext" name="form_text_3"
+                                                placeholder="Телефон" />
                                             <input class="button button-orange" type="submit" name="web_form_submit"
                                                 value="Отправить" />
                                         </form>
@@ -119,30 +115,22 @@
                     </a></div>
                 <form method="get" action="/search/" class="search-find">
                     <div class="search-find__categories">
-                        <div class="categories-text" data-id="">Все</div>
-                        <input type="hidden" placeholder="Все">
+                        <div class="categories-text">Все</div>
+                        <input type="hidden">
                         <div class="search-select hide closeWindow"><span>Выберете категорию:</span>
                             <ul>
-                                <li data-id="">Все</li>
-                                <li data-id="124">Весовое</li>
-                                <li data-id="1940">Для магазинов</li>
-                                <li data-id="941"></li>
-                                <li data-id="936"></li>
-                                <li data-id="72"></li>
-                                <li data-id="107">Для обеденных залов</li>
-                                <li data-id="82">Нейтральное</li>
-                                <li data-id="10">Для бара</li>
-                                <li data-id="83">Для фаст-фуд</li>
-                                <li data-id="949"></li>
-                                <li data-id="935"></li>
-                                <li data-id="9">Посудомоечное</li>
-                                <li data-id="14"></li>
-                                <li data-id="252"></li>
-                                <li data-id="2">Тепловое</li>
-                                <li data-id="960">Термоподносы</li>
-                                <li data-id="50">Хлебопекарное</li>
-                                <li data-id="7">Холодильное</li>
-                                <li data-id="8">Электромеханическое</li>
+                                <li>Все</li>
+                                <li>Тепловое</li>
+                                <li>Холодильное</li>
+                                <li>Электромеханическое</li>
+                                <li>Посудомоечное</li>
+                                <li>Хлебопекарное</li>
+                                <li>Линии раздачи</li>
+                                <li>Нейтральное</li>
+                                <li>Для фаст-фуд</li>
+                                <li>Для залов</li>
+                                <li>Вспомогательное</li>
+                                <li>Для магазинов</li>
                             </ul>
                         </div>
                     </div>
@@ -160,8 +148,8 @@
                         <img src="img/suppliers.png" alt="suppliers">
                     </div>
                     <div class="suppliers-text">
-                        <noindex><a target="_blank" rel="nofollow" href="#"><span>Мы на портале
-                                    поставщиков</span></a></noindex>
+                        <a target="_blank" rel="nofollow" href="#"><span>Мы на портале
+                                поставщиков</span></a>
                     </div>
                 </div>
                 <a rel="nofollow" href="#" class="search-basket">
@@ -283,8 +271,13 @@
                                         </a></div>
                                 </div>
                             </div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev">
+                                <img src="img/left2.png" alt="">
+                            </div>
+                            <div class="swiper-button-next">
+                                <img src="img/right2.png" alt="">
+
+                            </div>
                         </div>
 
 
@@ -390,8 +383,11 @@
                                         </a></div>
                                 </div>
                             </div>
-                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-prev">
+                                <img src="img/left2.png" alt="">
+                            </div>
                             <div class="swiper-button-next"></div>
+                            <img src="img/right2.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -401,83 +397,83 @@
                             <div class="main-block__menu sections__2">
                                 <ul>
                                     <li><a href="#" data-id="3">Пароконвектоматы</a></li>
-                                    <li><a href="#" data-id="4">Конвекционные
+                                    <li><a href="#">Конвекционные
                                             печи</a></li>
-                                    <li><a href="#" data-id="5">Плиты</a></li>
-                                    <li><a href="#" data-id="15">Шкафы
+                                    <li><a href="#">Плиты</a></li>
+                                    <li><a href="#">Шкафы
                                             жарочные</a></li>
-                                    <li><a href="#" data-id="16">Котлы</a></li>
-                                    <li><a href="#" data-id="17">Фритюрницы</a></li>
-                                    <li><a href="#" data-id="19">Кипятильники</a></li>
-                                    <li><a href="#" data-id="20">Водонагреватели</a></li>
-                                    <li><a href="#" data-id="21">Столы тепловые</a>
+                                    <li><a href="#">Котлы</a></li>
+                                    <li><a href="#">Фритюрницы</a></li>
+                                    <li><a href="#">Кипятильники</a></li>
+                                    <li><a href="#">Водонагреватели</a></li>
+                                    <li><a href="#">Столы тепловые</a>
                                     </li>
-                                    <li><a href="#" data-id="22">Мармиты</a></li>
-                                    <li><a href="#" data-id="1913">Сковороды</a></li>
-                                    <li><a href="#" data-id="1973">Казаны</a></li>
-                                    <li><a href="#" data-id="1985">Полки
+                                    <li><a href="#">Мармиты</a></li>
+                                    <li><a href="#">Сковороды</a></li>
+                                    <li><a href="#">Казаны</a></li>
+                                    <li><a href="#">Полки
                                             тепловые</a></li>
-                                    <li><a href="#" data-id="2012">Аппараты контактной обработки</a></li>
+                                    <li><a href="#">Аппараты контактной обработки</a></li>
                                 </ul>
                             </div>
                             <div class="main-block__menu sections__7">
                                 <ul>
                                     <li><a href="#" data-id="23">Холодильные
                                             шкафы</a></li>
-                                    <li><a href="#" data-id="24">Камеры
+                                    <li><a href="#">Камеры
                                             холодильные</a></li>
-                                    <li><a href="#" data-id="25">Моноблоки</a></li>
-                                    <li><a href="#" data-id="26">Сплит-системы</a>
+                                    <li><a href="#">Моноблоки</a></li>
+                                    <li><a href="#">Сплит-системы</a>
                                     </li>
-                                    <li><a href="#" data-id="27">Столы
+                                    <li><a href="#">Столы
                                             холодильные</a></li>
-                                    <li><a href="#" data-id="28">Витрины
+                                    <li><a href="#">Витрины
                                             холодильные</a></li>
-                                    <li><a href="#" data-id="29">Горки
+                                    <li><a href="#">Горки
                                             холодильные</a></li>
-                                    <li><a href="#" data-id="30">Бонеты</a></li>
-                                    <li><a href="#" data-id="31">Лари
+                                    <li><a href="#">Бонеты</a></li>
+                                    <li><a href="#">Лари
                                             морозильные</a></li>
-                                    <li><a href="#" data-id="32">Льдогенераторы</a>
+                                    <li><a href="#">Льдогенераторы</a>
                                     </li>
-                                    <li><a href="#" data-id="33">Шкафы
+                                    <li><a href="#">Шкафы
                                             шоковой заморозки</a></li>
-                                    <li><a href="#" data-id="1944">Кегераторы</a></li>
-                                    <li><a href="#" data-id="1965">Холодильные
+                                    <li><a href="#">Кегераторы</a></li>
+                                    <li><a href="#">Холодильные
                                             агрегаты</a></li>
                                 </ul>
                             </div>
                             <div class="main-block__menu sections__8">
                                 <ul>
 
-                                    <li><a href="#" data-id="34">Овощерезки</a></li>
-                                    <li><a href="#" data-id="35">Машины для мойки овощей</a></li>
-                                    <li><a href="#" data-id="36">Протирочные
+                                    <li><a href="#">Овощерезки</a></li>
+                                    <li><a href="#">Машины для мойки овощей</a></li>
+                                    <li><a href="#">Протирочные
                                             машины</a></li>
-                                    <li><a href="#" data-id="37">Хлеборезки</a></li>
-                                    <li><a href="#" data-id="38">Мясорубки</a></li>
-                                    <li><a href="#" data-id="39">Картофелечистки</a></li>
-                                    <li><a href="#" data-id="40">Универсальные кухонные машины</a></li>
-                                    <li><a href="#" data-id="41">Куттеры</a></li>
-                                    <li><a href="#" data-id="42">Кухонный
+                                    <li><a href="#">Хлеборезки</a></li>
+                                    <li><a href="#">Мясорубки</a></li>
+                                    <li><a href="#">Картофелечистки</a></li>
+                                    <li><a href="#">Универсальные кухонные машины</a></li>
+                                    <li><a href="#">Куттеры</a></li>
+                                    <li><a href="#">Кухонный
                                             процессор</a></li>
-                                    <li><a href="#" data-id="43">Бликсер</a></li>
-                                    <li><a href="#" data-id="45">Ручные миксеры</a>
+                                    <li><a href="#">Бликсер</a></li>
+                                    <li><a href="#">Ручные миксеры</a>
                                     </li>
-                                    <li><a href="#" data-id="1164">Транспортер для сбора грязной посуды</a></li>
+                                    <li><a href="#">Транспортер для сбора грязной посуды</a></li>
                                 </ul>
                             </div>
                             <div class="main-block__menu sections__9">
                                 <ul>
-                                    <li><a href="#" data-id="46">Фронтальные
+                                    <li><a href="#">Фронтальные
                                             машины</a></li>
-                                    <li><a href="#" data-id="47">Купольные
+                                    <li><a href="#">Купольные
                                             машины</a></li>
-                                    <li><a href="#" data-id="48">Туннельные
+                                    <li><a href="#">Туннельные
                                             машины</a></li>
-                                    <li><a href="#" data-id="49">Котломоечные
+                                    <li><a href="#">Котломоечные
                                             машины</a></li>
-                                    <li><a href="#" data-id="1906">Стаканомоечные машины</a></li>
+                                    <li><a href="#">Стаканомоечные машины</a></li>
                                 </ul>
                             </div>
                             <div class="main-block__menu sections__10">
@@ -490,14 +486,14 @@
                             </div>
                             <div class="main-block__menu sections__50">
                                 <ul>
-                                    <li><a href="#" data-id="53">Мукопросеиватели</a></li>
-                                    <li><a href="#" data-id="55">Печи для
+                                    <li><a href="#">Мукопросеиватели</a></li>
+                                    <li><a href="#">Печи для
                                             пиццы</a></li>
-                                    <li><a href="#" data-id="56">Печи
+                                    <li><a href="#">Печи
                                             хлебопекарные</a></li>
-                                    <li><a href="#" data-id="58">Противни, формы, решетки для печей</a></li>
-                                    <li><a href="#" data-id="59">Расстоечные шкафы и камеры</a></li>
-                                    <li><a href="#" data-id="65">Тестомесы</a></li>
+                                    <li><a href="#">Противни, формы, решетки для печей</a></li>
+                                    <li><a href="#">Расстоечные шкафы и камеры</a></li>
+                                    <li><a href="#">Тестомесы</a></li>
                                 </ul>
                             </div>
                             <div class="main-block__menu sections__72">
@@ -511,73 +507,73 @@
                                     <li><a href="#">Вега</a></li>
                                     <li><a href="#">Школьник</a></li>
                                     <li><a href="#">Мастер</a></li>
-                                    <li><a href="#" data-id="81">Салат-бары
+                                    <li><a href="#">Салат-бары
                                             (буфет)</a></li>
-                                    <li><a href="#" data-id="1911">Линия самообслуживания передвижная</a></li>
+                                    <li><a href="#">Линия самообслуживания передвижная</a></li>
                                 </ul>
                             </div>
                             <div class="main-block__menu sections__82">
                                 <ul>
-                                    <li><a href="#" data-id="84">Ванны моечные</a>
+                                    <li><a href="#">Ванны моечные</a>
                                     </li>
-                                    <li><a href="#" data-id="85">Столы
+                                    <li><a href="#">Столы
                                             производственные</a></li>
-                                    <li><a href="#" data-id="86">Стеллажи
+                                    <li><a href="#">Стеллажи
                                             кухонные</a></li>
-                                    <li><a href="#" data-id="87">Полки</a></li>
-                                    <li><a href="#" data-id="88">Зонты
+                                    <li><a href="#">Полки</a></li>
+                                    <li><a href="#">Зонты
                                             вентиляционные</a></li>
-                                    <li><a href="#" data-id="89">Тележки</a></li>
-                                    <li><a href="#" data-id="90">Шпильки</a></li>
-                                    <li><a href="#" data-id="91">Шкафы</a></li>
-                                    <li><a href="#" data-id="92">Подтоварники и подставки</a></li>
-                                    <li><a href="#" data-id="93">Контейнеры для продуктов</a></li>
+                                    <li><a href="#">Тележки</a></li>
+                                    <li><a href="#">Шпильки</a></li>
+                                    <li><a href="#">Шкафы</a></li>
+                                    <li><a href="#">Подтоварники и подставки</a></li>
+                                    <li><a href="#">Контейнеры для продуктов</a></li>
                                 </ul>
                             </div>
                             <div class="main-block__menu sections__83">
                                 <ul>
                                     <li><a href="#" data-id="95">Грили для кур</a>
                                     </li>
-                                    <li><a href="#" data-id="96">Фритюрницы электрические</a></li>
-                                    <li><a href="#" data-id="97">Чебуречницы</a></li>
-                                    <li><a href="#" data-id="98">Установки
+                                    <li><a href="#">Фритюрницы электрические</a></li>
+                                    <li><a href="#">Чебуречницы</a></li>
+                                    <li><a href="#">Установки
                                             Шаурма</a></li>
-                                    <li><a href="#" data-id="99">Пончиковые
+                                    <li><a href="#">Пончиковые
                                             аппараты</a></li>
-                                    <li><a href="#" data-id="100">Аппараты
+                                    <li><a href="#">Аппараты
                                             блинные</a></li>
-                                    <li><a href="#" data-id="101">Роликовый
+                                    <li><a href="#">Роликовый
                                             гриль</a></li>
-                                    <li><a href="#" data-id="102">Контактный
+                                    <li><a href="#">Контактный
                                             гриль</a></li>
-                                    <li><a href="#" data-id="103">Гриль
+                                    <li><a href="#">Гриль
                                             Саламандра</a></li>
-                                    <li><a href="#" data-id="104">Аппараты для сахарной ваты</a></li>
-                                    <li><a href="#" data-id="105">Аппараты
+                                    <li><a href="#">Аппараты для сахарной ваты</a></li>
+                                    <li><a href="#">Аппараты
                                             для попкорна</a></li>
-                                    <li><a href="#" data-id="106">Оборудование для бургерных</a></li>
+                                    <li><a href="#">Оборудование для бургерных</a></li>
                                 </ul>
                             </div>
                             <div class="main-block__menu sections__107">
                                 <ul>
-                                    <li><a href="#" data-id="94">Барные стойки</a>
+                                    <li><a href="#">Барные стойки</a>
                                     </li>
-                                    <li><a href="#" data-id="120">Диваны для бара и ресторана</a></li>
-                                    <li><a href="#" data-id="121">Обеденные
+                                    <li><a href="#">Диваны для бара и ресторана</a></li>
+                                    <li><a href="#">Обеденные
                                             группы</a></li>
-                                    <li><a href="#" data-id="1904">Стулья</a></li>
-                                    <li><a href="#" data-id="1905">Столы</a></li>
+                                    <li><a href="#">Стулья</a></li>
+                                    <li><a href="#">Столы</a></li>
                                 </ul>
                             </div>
                             <div class="main-block__menu sections__124">
                                 <ul>
-                                    <li><a href="#" data-id="125">Весы
+                                    <li><a href="#">Весы
                                             напольные</a></li>
-                                    <li><a href="#" data-id="126">Весы
+                                    <li><a href="#">Весы
                                             порционные настольные</a></li>
-                                    <li><a href="#" data-id="1958">Баки для
+                                    <li><a href="#">Баки для
                                             мусора</a></li>
-                                    <li><a href="#" data-id="1989">Измельчители пищевых отходов</a></li>
+                                    <li><a href="#">Измельчители пищевых отходов</a></li>
                                 </ul>
                             </div>
                             <div class="main-block__menu sections__252">
@@ -598,86 +594,86 @@
                             </div>
                             <div class="main-block__menu sections__960">
                                 <ul>
-                                    <li><a href="#" data-id="961">Термоподносы</a>
+                                    <li><a href="#">Термоподносы</a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="main-block__menu sections__1940">
                                 <ul>
-                                    <li><a href="#" data-id="1969">Неохлаждаемые витрины</a></li>
-                                    <li><a href="#" data-id="1971">Прилавки и кассовые боксы</a></li>
-                                    <li><a href="#" data-id="1989">Измельчители пищевых отходов</a></li>
-                                    <li><a href="#" data-id="103">Гриль
+                                    <li><a href="#">Неохлаждаемые витрины</a></li>
+                                    <li><a href="#">Прилавки и кассовые боксы</a></li>
+                                    <li><a href="#">Измельчители пищевых отходов</a></li>
+                                    <li><a href="#">Гриль
                                             Саламандра</a>
                                     </li>
-                                    <li><a href="#" data-id="102">Контактный
+                                    <li><a href="#">Контактный
                                             гриль</a>
                                     </li>
-                                    <li><a href="#" data-id="18">Жарочные
+                                    <li><a href="#">Жарочные
                                             поверхности</a>
                                     </li>
-                                    <li><a href="#" data-id="20">Водонагреватели</a>
+                                    <li><a href="#" ">Водонагреватели</a>
                                     </li>
 
-                                    <li><a href="#" data-id="19">Кипятильники</a>
+                                    <li><a href=" #">Кипятильники</a>
                                     </li>
 
-                                    <li><a href="#" data-id="4">Конвекционные
+                                    <li><a href="#">Конвекционные
                                             печи</a>
                                     </li>
 
-                                    <li><a href="#" data-id="3">Пароконвектоматы</a>
+                                    <li><a href="#">Пароконвектоматы</a>
                                     </li>
 
-                                    <li><a href="#" data-id="5">Плиты</a>
+                                    <li><a href="#">Плиты</a>
                                     </li>
 
-                                    <li><a href="#" data-id="6">Электросковороды</a>
+                                    <li><a href="#">Электросковороды</a>
                                     </li>
 
-                                    <li><a href="#" data-id="17">Фритюрницы</a>
+                                    <li><a href="#">Фритюрницы</a>
                                     </li>
 
-                                    <li><a href="#" data-id="15">Шкафы
+                                    <li><a href="#">Шкафы
                                             жарочные</a>
                                     </li>
 
-                                    <li><a href="#" data-id="31">Лари
+                                    <li><a href="#">Лари
                                             морозильные</a>
                                     </li>
 
-                                    <li><a href="#" data-id="23">Холодильные
+                                    <li><a href="#">Холодильные
                                             шкафы</a>
                                     </li>
 
-                                    <li><a href="#" data-id="33">Шкафы
+                                    <li><a href="#">Шкафы
                                             шоковой заморозки</a>
                                     </li>
 
-                                    <li><a href="#" data-id="43">Бликсер</a>
+                                    <li><a href="#">Бликсер</a>
                                     </li>
 
-                                    <li><a href="#" data-id="41">Куттеры</a>
+                                    <li><a href="#">Куттеры</a>
                                     </li>
 
-                                    <li><a href="#" data-id="42">Кухонный
+                                    <li><a href="#">Кухонный
                                             процессор</a>
                                     </li>
 
-                                    <li><a href="#" data-id="38">Мясорубки</a>
+                                    <li><a href="#">Мясорубки</a>
                                     </li>
 
-                                    <li><a href="#" data-id="34">Овощерезки</a>
+                                    <li><a href="#">Овощерезки</a>
                                     </li>
 
-                                    <li><a href="#" data-id="36">Протирочные
+                                    <li><a href="#">Протирочные
                                             машины</a>
                                     </li>
 
-                                    <li><a href="#" data-id="45">Ручные миксеры</a>
+                                    <li><a href="#">Ручные миксеры</a>
                                     </li>
 
-                                    <li><a href="#" data-id="40">Универсальные кухонные машины</a>
+                                    <li><a href="#">Универсальные кухонные машины</a>
                                     </li>
                                 </ul>
                             </div>
@@ -837,6 +833,7 @@
                             </div>
                         </div>
                     </div>
+                </div>
             </section>
             <div class="shadow-l">
             </div>
@@ -980,8 +977,12 @@
 
                         </div>
                         <div class="swiper-pagination"></div>
-                        <div class="swiper-button-prev mobile2"></div>
-                        <div class="swiper-button-next mobile2"></div>
+                        <div class="swiper-button-prev mobile2">
+                            <img src="img/left2.png" alt="">
+                        </div>
+                        <div class="swiper-button-next mobile2">
+                            <img src="img/right2.png" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="main-block__context__item">
@@ -1010,104 +1011,96 @@
             </ul>
         </div>
     </section>
-    <noindex>
-        <section class="news news-main">
-            <div class="container2">
-                <div class="titleMain"><span>Новости производителей</span></div>
+    <section class="news news-main">
+        <div class="container2">
+            <div class="titleMain"><span>Новости производителей</span></div>
 
 
-                <div class="news-content">
-                    <div class="news-left">
-                        <div class="news-left__item">
-                            <a rel="nofollow" href="#" class="news-left__image"><img src="img/RPH.png"
-                                    alt="any machine"></a>
-                            <div class="context">
-                                <div class="news-left__data"><span class="manufacturer">Abat</span><span
-                                        class="data">22.06.17</span></div>
-                                <a rel="nofollow" href="#" class="news-left__title title"><span>Новый разборный
-                                        ротационный пекарский шкаф
-                                        РПШ-18-8-6МР</span></a>
-                                <div class="news-left__text text">
-                                    <p>Новый разборный ротационный пекарский шкаф
-                                        РПШ-18-8-6МР: в комплекте тележка-шпилька ТШГ-18 на 18 уровней 600х800 мм
-                                        вместимость тележки-шпильки - 135 хлебных форм №7</p>
-                                    <p>инжекционный тип парообразования</p>
-                                    <p>разборная конструкция увеличенно стекло двери.</p>
-                                    Память на 110 программ (до 4-ех этапов в каждой программе)
-                                    <p>USB-порт. Таймер до 10ч</p>
-                                    <p>Регулировка влажности от 0 до 100%. 5 скоростей</p>
-                                </div>
+            <div class="news-content">
+                <div class="news-left">
+                    <div class="news-left__item">
+                        <a rel="nofollow" href="#" class="news-left__image"><img src="img/RPH.png"
+                                alt="any machine"></a>
+                        <div class="context">
+                            <div class="news-left__data"><span class="manufacturer">Abat</span><span
+                                    class="data">22.06.17</span></div>
+                            <a rel="nofollow" href="#" class="news-left__title title"><span>Новый разборный
+                                    ротационный пекарский шкаф
+                                    РПШ-18-8-6МР</span></a>
+                            <div class="news-left__text text">
+                                <p>Новый разборный ротационный пекарский шкаф
+                                    РПШ-18-8-6МР: в комплекте тележка-шпилька ТШГ-18 на 18 уровней 600х800 мм
+                                    вместимость тележки-шпильки - 135 хлебных форм №7</p>
+                                <p>инжекционный тип парообразования</p>
+                                <p>разборная конструкция увеличенно стекло двери.</p>
+                                Память на 110 программ (до 4-ех этапов в каждой программе)
+                                <p>USB-порт. Таймер до 10ч</p>
+                                <p>Регулировка влажности от 0 до 100%. 5 скоростей</p>
                             </div>
                         </div>
-                    </div>
-
-
-
-                    <div class="news-right">
-                        <div class="news-right-item">
-                            <a rel="nofollow" href="#" class="news-right__image"><img src="img/tunneldishwasher.png"
-                                    alt="dishwasher" /></a>
-                            <div class="news-right-text">
-                                <div class="news-right-text__data">
-                                    <span class="manufacturer">Abat</span>
-                                    <span class="data">22.06.17</span>
-                                </div>
-                                <a rel="nofollow" href="#" class="news-right-text__title title"><span>Повышение
-                                        энергоэффективности тонельных
-                                        посудомоечных машин МПТ торговой марки Abat</span></a>
-                                <div class="news-right-text__text text">
-                                    <p>
-                                    <p>С целью снижения нагрузки на электрическую сеть и для повышения
-                                        энергоэффективности иделий с 1 июня 2017 года был изменен алгоритм работы
-                                        туннельных посудомоечных машин МПТ торговой марки Abat всех моделей...</p>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="news-right-item">
-                            <a rel="nofollow" href="#" class="news-right__image"><img src="img/tunneldishwasher2.png"
-                                    alt="another dishwasher" /></a>
-                            <div class="news-right-text">
-                                <div class="news-right-text__data"><span class="manufacturer">Abat</span></div>
-                                <div class="news-right-text__data">
-                                    <span class="data" style="margin-top: -2%; margin-bottom: 2%">22.06.17</span>
-                                </div>
-                                <a rel="nofollow" href="#" class="news-right-text__title title"><span>Повышение
-                                        энергоэффективности тонельных
-                                        посудомоечных машин МПТ торговой марки Abat</span></a>
-                                <div class="news-right-text__text text">
-                                    <p>
-                                    <p>С целью снижения нагрузки на электрическую сеть и для повышения
-                                        энергоэффективности иделий с 1 июня 2017 года был изменен алгоритм работы</p>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="news-right-item">
-                            <a rel="nofollow" href="#" class="news-right__image"><img src="img/tunneldishwasher.png"
-                                    alt="1 more another dishwasher" /></a>
-                            <div class="news-right-text">
-                                <div class="news-right-text__data"><span class="manufacturer">Abat</span><span
-                                        class="data">22.06.17</span></div>
-                                <a rel="nofollow" href="#" class="news-right-text__title title"><span>Повышение
-                                        энергоэффективности тонельных
-                                        посудомоечных машин МПТ торговой марки Abat</span></a>
-                                <div class="news-right-text__text text">
-                                    <p>
-                                    <p>С целью снижения нагрузки на электрическую сеть и для повышения
-                                        энергоэффективности иделий с 1 июня 2017 года был изменен алгоритм работы
-                                        туннельных посудомоечных машин МПТ торговой марки Abat всех моделей... </p>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
+
+
+
+                <div class="news-right">
+                    <div class="news-right-item">
+                        <a rel="nofollow" href="#" class="news-right__image"><img src="img/tunneldishwasher.png"
+                                alt="dishwasher" /></a>
+                        <div class="news-right-text">
+                            <div class="news-right-text__data">
+                                <span class="manufacturer">Abat</span>
+                                <span class="data">22.06.17</span>
+                            </div>
+                            <a rel="nofollow" href="#" class="news-right-text__title title"><span>Повышение
+                                    энергоэффективности тонельных
+                                    посудомоечных машин МПТ торговой марки Abat</span></a>
+                            <div class="news-right-text__text text">
+                                <p>С целью снижения нагрузки на электрическую сеть и для повышения
+                                    энергоэффективности иделий с 1 июня 2017 года был изменен алгоритм работы
+                                    туннельных посудомоечных машин МПТ торговой марки Abat всех моделей...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-right-item">
+                        <a rel="nofollow" href="#" class="news-right__image"><img src="img/tunneldishwasher2.png"
+                                alt="another dishwasher" /></a>
+                        <div class="news-right-text">
+                            <div class="news-right-text__data"><span class="manufacturer">Abat</span></div>
+                            <div class="news-right-text__data">
+                                <span class="data" style="margin-top: -2%; margin-bottom: 2%">22.06.17</span>
+                            </div>
+                            <a rel="nofollow" href="#" class="news-right-text__title title"><span>Повышение
+                                    энергоэффективности тонельных
+                                    посудомоечных машин МПТ торговой марки Abat</span></a>
+                            <div class="news-right-text__text text">
+                                <p>С целью снижения нагрузки на электрическую сеть и для повышения
+                                    энергоэффективности иделий с 1 июня 2017 года был изменен алгоритм работы</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news-right-item">
+                        <a rel="nofollow" href="#" class="news-right__image"><img src="img/tunneldishwasher.png"
+                                alt="1 more another dishwasher" /></a>
+                        <div class="news-right-text">
+                            <div class="news-right-text__data"><span class="manufacturer">Abat</span><span
+                                    class="data">22.06.17</span></div>
+                            <a rel="nofollow" href="#" class="news-right-text__title title"><span>Повышение
+                                    энергоэффективности тонельных
+                                    посудомоечных машин МПТ торговой марки Abat</span></a>
+                            <div class="news-right-text__text text">
+                                <p>С целью снижения нагрузки на электрическую сеть и для повышения
+                                    энергоэффективности иделий с 1 июня 2017 года был изменен алгоритм работы
+                                    туннельных посудомоечных машин МПТ торговой марки Abat всех моделей... </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div class="container2 news-button"><a rel="nofollow" href="#" class="button">Все новости</a></div>
-        </section>
-    </noindex>
+        </div>
+        <div class="container2 news-button"><a rel="nofollow" href="#" class="button">Все новости</a></div>
+    </section>
 
     <section class="main-recomend">
         <div class="container2">
@@ -1283,8 +1276,8 @@
                         <li>09:00 до 18:00</li>
                         <li>com@stolovay.ru</li>
                         <li>info@stolovay.ru</li>
-                        <li>111524, Москва,</li>
-                        <li>Рязанский проспект 24к2</li>
+                        <li><a href="#" target="_blank">111524, Москва,</a></li>
+                        <li><a href="#" target="_blank">Рязанский проспект 24к2</a> </li>
                     </ul>
                 </div>
             </div>
@@ -1308,6 +1301,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
     <div id="message" class="message white-popup mfp-hide">
         <div class="title">Товар успешно добавлен в корзину</div>
