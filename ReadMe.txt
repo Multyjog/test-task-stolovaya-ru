@@ -1,1 +1,0 @@
-- Changed the smooth scroll function in app.js
