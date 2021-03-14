@@ -464,19 +464,6 @@ $(function() {
       },
     });
   });
-  //ползунок
-  // jQuery("#slider").slider({
-  //     min: 0,
-  //     max: 1000,
-  //     values: [0, 1000],
-  //     range: true,
-  //     stop: function (event, ui) {
-  //         jQuery("input#minCost").val(jQuery("#slider").slider("values", 0)
-  // + ' руб.'); jQuery("input#maxCost").val(jQuery("#slider").slider("values",
-  // 1) + ' руб.'); }, slide: function (event, ui) {
-  // jQuery("input#minCost").val(jQuery("#slider").slider("values", 0) + '
-  // руб.'); jQuery("input#maxCost").val(jQuery("#slider").slider("values", 1)
-  // + ' руб.'); } });
 
   $('.mobile-search').click(function() {
     $('.mobile-menu_hidden').slideUp();
@@ -641,28 +628,6 @@ $(function() {
         $('.more').remove();
         $('.catalog__context').append(e);
 
-        // $('[data-show-more]').click(function () {
-        //     var btn = $(this);
-        //     var page = btn.attr('data-next-page');
-        //     var id = btn.attr('data-show-more');
-        //     var bx_ajax_id = btn.attr('data-ajax-id');
-        //
-        //     var data = {
-        //         bxajaxid: bx_ajax_id
-        //     };
-        //     data['PAGEN_' + id] = page;
-        //
-        //     $.ajax({
-        //         type: "POST",
-        //         url: window.location.href,
-        //         data: data,
-        //         timeout: 3000,
-        //         success: function (data) {
-        //             $("#btn_" + bx_ajax_id).remove();
-        //             $('.catalog-list').append(data);
-        //         }
-        //     });
-        // });
       },
       error: function(e) {
       },
@@ -722,12 +687,6 @@ $(function() {
     });
 
     return false;
-    // var i = 0;
-    // while(i!=$(this).find('input[name=COUNT]')){
-    //     $(this).find('a').click();
-    //     i++;
-    // }
-    // return false;
   });
 
   //корзина
