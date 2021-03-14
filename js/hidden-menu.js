@@ -27,7 +27,7 @@ shadow.addEventListener("mouseover", () => {
 });
 
 // add or remove the category menu at the mobile version of app by pressing a button
-document.querySelector(".mobile-search__button").addEventListener("touchstart", () => categoryElement.classList.toggle("drop-menu__hide"))
+document.querySelector(".mobile-search__button").addEventListener("click", () => categoryElement.classList.toggle("drop-menu__hide"))
 
 
 
