@@ -16,9 +16,10 @@ $(function() {
     };
      /*плавный скролл*/
     $('a[href^="#"]').click(function(){
-        var el = $(this).attr('href');
+        var href = $(this).attr('href');
+        if (href==="#") return false
         $('body').animate({
-            scrollTop: $(el).offset().top}, 2000);
+            scrollTop: $(href).offset().top}, 2000);
         return false;
     });
   function showMessage(text) {

@@ -26781,6 +26781,9 @@ input.bt2:active {
 .mobile-search{
     display: none;
 }
+.drop-menu {
+    display:none !important;
+}
 }
 .mobile-search {
     height: 100px;
@@ -26804,14 +26807,14 @@ width: 60px;
     margin-left: 2rem;
 }
 .mobile-search__rightgroup {
-width: 210px;
+    width: 33%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-right: 1rem;
 }
 .mobile-search__leftgroup {
-    width: 210px;
+    width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;

@@ -2,6 +2,8 @@ const mailElement = document.querySelector(".header__mail__copy");
 const callBackElement = document.querySelector(".header-tel-callback");
 const categoryElement = document.querySelector(".drop-menu");
 const shadow = document.querySelector(".shadow");
+// const mobileMenu = document.querySelector(".drop-menu")
+// let vWidth = window.innerWidth
 
 
 // show the copy menu
@@ -29,6 +31,16 @@ shadow.addEventListener("mouseover", () => {
 
 // add or remove the category menu at the mobile version of app by pressing a button
 document.querySelector(".mobile-search__button").addEventListener("touchstart", () => categoryElement.classList.toggle("drop-menu__hide"))
+
+
+// window.addEventListener("resize", () => {
+//     if (vWidth > 767) {
+//         mobileMenu.classList.add("drop-menu__hide")
+//         console.log(vWidth)
+//     }
+//     return true
+// })
+
 
 
 
